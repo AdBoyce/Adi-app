@@ -72,8 +72,10 @@
       }
     }
 
-    // Initial render
-    updateView();
+    // Wait for the DOM to fully load before running the initial render
+    document.addEventListener('DOMContentLoaded', function() {
+      updateView();
+    });
   </script>
 
 </body>
